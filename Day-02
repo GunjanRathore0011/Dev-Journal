@@ -1,0 +1,33 @@
+## 🚀 Day 2: To-Do List App – Core Functionality & UI
+
+### ✅ What I did today:
+- Created UI layout using HTML & CSS
+- Implemented **task creation dynamically** using JavaScript
+- Styled task items with glowing effect (Neon + Gradient)
+- Added:
+  - ✅ Add Task
+  - 🗑️ Delete Task
+  - ☑️ Mark as Complete
+  - 🧭 Filter Tabs → All / Completed / Pending
+- Used `setAttribute()` and DOM manipulation for structure control
+- Added **scroll behavior** for overflow handling
+- Customized **scrollbar** using WebKit for theme consistency
+
+### 🎯 What’s next:
+- [ ] Save tasks in `localStorage`
+- [ ] Add voice input with Web Speech API
+- [ ] Add date/time of task creation
+- [ ] Animate checkbox/toggle transitions
+
+### 📸 Screenshot:
+![Day 2 UI](../screenshots/day2.png)
+
+---
+
+### 🔗 Tech Stack:
+- HTML  
+- CSS (custom scroll, glow effect)  
+- JavaScript (DOM, eventListeners, filtering logic)
+
+---
+ #BuildInPublic #JavaScript #FrontendDev*
