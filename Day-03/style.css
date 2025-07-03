@@ -1,0 +1,151 @@
+*{
+  box-sizing: border-box;
+}
+
+.todo-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  border: 1px solid white;
+}
+
+.filters {
+  margin: 1.8rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.filter-btn.active {
+  font-weight: bold;
+  border-bottom: 2px solid #C48CB3;
+}
+
+
+.glow-text {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Gradient underline with glow */
+.glow-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  height: 4px;
+  width: 60%;
+  background: linear-gradient(to right, #ff00cc, #3333ff); /* pink to purple */
+  border-radius: 10px;
+  box-shadow: 0 0 8px #ff00cc, 0 0 12px #3333ff; /* glowing effect */
+}
+.glow-box {
+  padding: 2rem;
+  width: 70vw;
+  height: 70vh;
+
+  border: 3.5px solid transparent;
+  border-radius: 10px;
+
+  background: linear-gradient(#0b1b32, #0b1b32) padding-box,
+              linear-gradient(to right, #ff00cc, #6600ff) border-box;
+
+  box-shadow: 0 0 10px #ff00cc, 0 0 20px #6600ff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  color: white;
+}
+#add-todo:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0 0 10px #ff00cc, 0 0 20px #6600ff; */
+}
+
+
+.glow-todo{
+   padding: 1rem .8rem;
+  width: 40vw;
+  height: max-content;
+
+  border: .8px solid transparent;
+  border-radius: 10px;
+
+  background: linear-gradient(#0b1b32, #0b1b32) padding-box,
+              linear-gradient(to right, #ff00cc, #6600ff) border-box;
+
+  box-shadow: 0 0 10px #ff00cc, 0 0 10px #6600ff;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.check-box{
+  position: absolute;
+  left: 1.5rem;
+  font-size: larger;
+}
+
+.trash-icon{
+  position: absolute;
+  right: 1.5rem;
+  font-size: larger;
+}
+
+.text-box {
+  flex: 1; /* Takes available space between checkbox and trash */
+  margin: 0 2.5rem; /* Adds space from both sides */
+  color: white;
+  word-break: break-word; /* Breaks long text */
+  text-align: center;
+}
+
+
+.To-Do-container {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+/* Now customize the scrollbar */
+.To-Do-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.To-Do-container::-webkit-scrollbar-track {
+  background: #0b1b32;
+}
+
+.To-Do-container::-webkit-scrollbar-thumb {
+  background: #C48CB3;
+  border-radius: 10px;
+}
+
+
+.no-task {
+  font-size: 1.2rem;
+  color: #e0d6ff;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  animation: fadeIn 0.8s ease-in-out;
+  text-shadow: 0 0 3px #c084fc;
+}
+

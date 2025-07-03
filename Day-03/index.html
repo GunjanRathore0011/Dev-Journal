@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- ✅ Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body
+    style="
+      height: 100vh;
+      background-color: #0b1b32;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <div
+      style="
+        height: 90vh;
+        width: 70vw;
+        border: 2px solid;
+        border-color: #c48cb3;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+      "
+      class="glow-box"
+    >
+      <h1 style="font-weight: bold; margin-bottom: 3rem">To-Do List</h1>
+
+      <!-- Flex container for horizontal layout -->
+      <div style="display: flex; align-items: center">
+        <!-- Input with mic icon -->
+        <div style="position: relative; width: 300px">
+          <input
+            type="text"
+            placeholder="Add a new task..."
+            class="task-value"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Add a new task...'"
+            style="
+              width: 100%;
+              padding: 0.7rem 2.5rem 0.7rem 1rem;
+              font-size: 1rem;
+              border-radius: 5px;
+              border: none;
+              outline: none;
+            "
+          />
+
+          <!-- 🎤 Gradient + Glow Mic Icon -->
+          <i
+            class="fa-solid fa-microphone mic-icon"
+            style="
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 1.5rem;
+              background: linear-gradient(to right, #ff00cc, #6600ff);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              /* text-shadow: 0 0 5px #ff00cc, 0 0 8px #6600ff; */
+              pointer-events: auto;
+              cursor: pointer;
+            "
+          ></i>
+        </div>
+
+        <!-- Add button beside input -->
+        <button
+          id="add-todo"
+          style="
+            padding: 0.7rem 1.8rem;
+            margin-left: 10px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(
+              to right,
+              #ff00cc,
+              #6600ff
+            ); /* PINK → PURPLE */
+            /* box-shadow: 0 0 6px #ff00cc, 0 0 10px #6600ff; */
+            cursor: pointer;
+            transition: transform 0.2s ease;
+          "
+        >
+          Add
+        </button>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+      </div>
+
+      <div class="To-Do-container"></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
