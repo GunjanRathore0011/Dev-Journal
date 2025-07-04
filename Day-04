@@ -1,0 +1,30 @@
+# 📅 Day-04: JavaScript Fundamentals - Scope & Shadowing
+
+## ✅ Topics Studied Today
+
+Today’s focus was on core JavaScript concepts:
+
+- `let` and `const` declarations
+- Block Scope
+- Shadowing in JavaScript
+
+Although I couldn’t study too much today, I made sure to keep the momentum going with at least some key concepts.
+
+---
+
+## 🧠 Key Takeaways
+
+- **`let` and `const`** are block-scoped and do not get hoisted like `var`.
+- **Block Scope** ensures that variables declared inside `{}` are not accessible outside.
+- **Shadowing** occurs when a variable in an inner scope has the same name as one in an outer scope, temporarily overriding it within the inner scope.
+
+---
+
+## 📌 Notes
+
+> Even on light days, consistent effort adds up.  
+> Revisiting these concepts will help solidify the foundation for async JS and closures later.
+
+---
+
+_Keeping the streak alive, one step at a time!_
